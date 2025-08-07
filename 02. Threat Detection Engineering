@@ -4,7 +4,7 @@ Why?
 
 cipher.exe is a built-in tool that can securely wipe free disk space. Its usage can indicate anti-forensics or attacker cleanup activities.
 
-Detection is done by building a Custom wazuh rule (cipher_rule.xml):
+Detection is done by building a Custom wazuh rule called cipher_rule.xml on the Wazuh Manager.
 
 This can be either done in the browser interface or in the CLI on Ubuntu.
 
