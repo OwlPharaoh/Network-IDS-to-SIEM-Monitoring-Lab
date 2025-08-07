@@ -1,0 +1,24 @@
+Threat Detection Engineering Example: cipher.exe Rule
+
+Why?
+
+cipher.exe is a built-in tool that can securely wipe free disk space. Its usage can indicate anti-forensics or attacker cleanup activities.
+
+Detection is done by building a Custom wazuh rule (cipher_rule.xml):
+
+This can be either done in the browser interface or in the CLI on Ubuntu.
+
+For this lab, we'll do it through the Rules section under server management on the Wazuh web interface
+
+<group name="windows,sysmon,cipher">
+  <rule id="100005" level="13">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.image" type="pcre2">cipher.exe</field>
+    <match>cipher.exe</match>
+    <description>Potential anti-forensics: cipher.exe is used to wipe data</description>
+  </rule>
+</group>
+
+
+
+Restart Wazuh manager for the rule to apply.
