@@ -72,7 +72,7 @@
 - You can verify by examining Event Viewer >>>> Application and Security Logs >>> Windows >>> Sysmon >>> Operational
 
 - On the Windows Host, check this file: "C:\Program Files (x86)\ossec-agent\ossec.conf"
-- Input the following:
+- Input the following before the </ossec_config> xml tag:
 
 <!-- Sysmon added as a log source-->
   <localfile>
