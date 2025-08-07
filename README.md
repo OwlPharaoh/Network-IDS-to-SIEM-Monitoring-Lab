@@ -1,2 +1,1 @@
-# Wazuh-SIEM-Lab
-A hands-on SIEM lab using Wazuh, Sysmon, and simulated attacks across virtual machines
+Welcome to my cybersecurity home lab, designed for practicing SOC (Security Operations Center) workflows, threat detection engineering and incident response. This lab includes a firewall, IDS, SIEM and multiple VMS simulating a small enterprise network.
