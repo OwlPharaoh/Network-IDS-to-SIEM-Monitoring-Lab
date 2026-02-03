@@ -1,7 +1,1 @@
-Install via pfSense >>>> System >>>>  Package Manager
-Navigate to Service >>> Suricata
-Enable on the LAN interface (for internal visibility)
-Choose rulesets (ET Open, Snort VRT, etc.)
-Set home net to 192.168.1.0/24
-Logging and alerts can be forwarded to Wazuh or stored locally.
-Work in progress: full tuning of Suricata signatures coming soon.
+
